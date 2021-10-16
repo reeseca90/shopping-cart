@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightgrey;
+  height: 40px;
+  margin-top: auto;  
+  width: 97vw;
+  max-width: 1000px;
+  padding: 10px;
+}
