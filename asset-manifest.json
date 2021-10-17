@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.27607903.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.c0eae9d0.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.c0eae9d0.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.c3c4442c.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.c3c4442c.js.map",
+    "static/js/2.b66d8e81.chunk.js": "/shopping-cart/static/js/2.b66d8e81.chunk.js",
+    "static/js/2.b66d8e81.chunk.js.map": "/shopping-cart/static/js/2.b66d8e81.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.27607903.chunk.css.map": "/shopping-cart/static/css/main.27607903.chunk.css.map",
+    "static/js/2.b66d8e81.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.b66d8e81.chunk.js.LICENSE.txt",
+    "static/media/aquarius.d2b431ac.jpg": "/shopping-cart/static/media/aquarius.d2b431ac.jpg",
+    "static/media/aries.971e94a2.jpg": "/shopping-cart/static/media/aries.971e94a2.jpg",
+    "static/media/cancer.18bea563.jpg": "/shopping-cart/static/media/cancer.18bea563.jpg",
+    "static/media/gemini.e34de85c.jpg": "/shopping-cart/static/media/gemini.e34de85c.jpg",
+    "static/media/leo.489d0967.jpg": "/shopping-cart/static/media/leo.489d0967.jpg",
+    "static/media/libra.7045bacb.jpg": "/shopping-cart/static/media/libra.7045bacb.jpg",
+    "static/media/milkyway.c7f66259.jpg": "/shopping-cart/static/media/milkyway.c7f66259.jpg",
+    "static/media/sagittarius.6f4b615e.jpg": "/shopping-cart/static/media/sagittarius.6f4b615e.jpg",
+    "static/media/scorpio.09a90a4f.jpg": "/shopping-cart/static/media/scorpio.09a90a4f.jpg",
+    "static/media/taurus.8a1aaa9e.jpg": "/shopping-cart/static/media/taurus.8a1aaa9e.jpg",
+    "static/media/virgo.56b49ce1.jpg": "/shopping-cart/static/media/virgo.56b49ce1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3c4442c.js",
+    "static/js/2.b66d8e81.chunk.js",
+    "static/css/main.27607903.chunk.css",
+    "static/js/main.c0eae9d0.chunk.js"
+  ]
+}
