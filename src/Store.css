@@ -3,19 +3,32 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .card {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #555563;
   width: 220px;
   height: 300px;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  padding-bottom: 0;
   gap: 10px;
+  background-color: #393942;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.textInput {
+  background-color: lightgrey;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 img {
@@ -28,6 +41,21 @@ img {
 .toCart {
   display: flex;
   gap: 10px;
+}
+
+.toCart > button {
+  border-radius: 5px;
+  background-color: #393942;
+  border: 2px solid #87879c;
+  color: white;
+  font-weight: bold;
+}
+.toCart > button:hover {
+  background-color: #555563;
+}
+.toCart > button:active {
+  transform: translateY(1px);
+  background-color: #393942;
 }
 
 input {

@@ -1,11 +1,24 @@
 header {
   display: flex;
+  min-width: 400px;
+  width: 97vw;
+  justify-content: center;
+  background-color: #87879c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header {
+  display: flex;
+  min-width: 400px;
   width: 97vw;
   max-width: 1000px;
   padding: 10px;
-  background-color: lightgrey;
+  background-color: #87879c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #logo {
@@ -20,6 +33,14 @@ header {
   gap: 30px;
   margin-left: auto;
   align-items: center;
+}
+
+#cartQuantity {
+  background-color: #00004c;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  height: 24px;
 }
 
 a {

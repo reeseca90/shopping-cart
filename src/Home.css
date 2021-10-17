@@ -1,0 +1,30 @@
+#homeUpper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 48px;
+  min-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  min-width: 400px;
+  text-align: center;
+}
+
+#homeText {
+  padding: 60px;
+  text-align: center;
+  font-size: 18px;
+  width: 400px
+}
+
+#homeImage {
+  width: 450px;
+  height: auto;
+  border-radius: 75px;
+}

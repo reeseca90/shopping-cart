@@ -1,62 +1,43 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import './Store.css';
-// I DON'T KNOW WHY I HAVE TO IMPORT WITH FILE EXTENSION BUT IT CRASHES IF I DON'T
-import aquarius from './images/aquarius.jpg';
-import aries from './images/aries.jpg';
-import cancer from './images/cancer.jpg';
-import gemini from './images/gemini.jpg';
-import leo from './images/leo.jpg';
-import libra from './images/libra.jpg';
-import sagittarius from './images/sagittarius.jpg';
-import scorpio from './images/scorpio.jpg';
-import taurus from './images/taurus.jpg';
-import virgo from './images/virgo.jpg';
+import {storeContext, cartContext} from './storeContext';
 
-const Store = () => {
-  const [order, setOrder] = useState({itemID: '', quantity: 0});
+const Store = ({ addToCart }) => {
+  const [order, setOrder] = useState({id: '', quantity: 0});
 
-  const [items, setItems] = useState([
-    {name: 'Aquarius', src: aquarius, id: 0},
-    {name: 'Aries', src: aries, id: 1},
-    {name: 'Cancer', src: cancer, id: 2},
-    {name: 'Gemini', src: gemini, id: 3},
-    {name: 'Leo', src: leo, id: 4},
-    {name: 'Libra', src: libra, id: 5},
-    {name: 'Sagittarius', src: sagittarius, id: 6},
-    {name: 'Scoprio', src: scorpio, id: 7},
-    {name: 'Taurus', src: taurus, id: 8},
-    {name: 'Virgo', src: virgo, id: 9}
-  ]);
+  const items = useContext(storeContext);
+  const { cart } = useContext(cartContext);
 
   const handleChange = (e) => {
-    setOrder({itemID: e.target.id,
-    quantity: e.target.value
+    // not using strict equality because ID becomes a string during setOrder
+    let workingItem = items.find((element) => {
+      return element.id == e.target.id;
     });
 
-    console.log(order);
-  }
-
-  const addToCart = (e) => {
-    e.preventDefault();
-    const holdQuantity = order.quantity;
-
-    setOrder({itemID: e.target.id,
-      quantity: holdQuantity
+    setOrder({id: workingItem.id,
+      quantity: e.target.value,
+      name: workingItem.name,
+      src: workingItem.src,
+      price: workingItem.price,
+      totalPrice: e.target.value * workingItem.price
     });
-
-    console.log(order);
   }
 
-  const tableData = (e) => {
+  const addToCartHandler = (e) => {
     e.preventDefault();
-    console.log(order);
-  }
 
-  
+    // don't add item to cart if add button for an item whose quantity was not updated last
+    // not using strict equality because ID becomes a string during setOrder
+    if (order.id != e.target.id) {
+      console.log('clicked wrong add button');
+    } else {
+      // do function to add to cart
+      addToCart(order);
+    }
+  }
 
   return (
     <div id="Store" className="mainContent">
-      <button onClick={tableData}>log data</button>
       <div id="storeGrid">
         {items.map((item) => {
           return (
@@ -64,8 +45,8 @@ const Store = () => {
               <img src={item.src} id={item.id} alt={item.name} />
               <span>{item.name}</span>
               <div className="toCart">
-                <input id={item.id} type="number" placeholder="0" onChange={handleChange} />
-                <button id={item.id} onClick={addToCart}>Add to Cart</button>
+                <input className="textInput" id={item.id} type="number" placeholder="0" onChange={handleChange} />
+                <button id={item.id} onClick={addToCartHandler}>Add to Cart</button>
               </div>
             </div>
           );

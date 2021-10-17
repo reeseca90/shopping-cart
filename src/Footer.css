@@ -2,14 +2,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-style: italic;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: lightgrey;
+  background-color: #87879c;
   height: 40px;
   margin-top: auto;  
   width: 97vw;
-  max-width: 1000px;
-  padding: 10px;
+  padding: 10px 0 10px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-width: 400px;
 }

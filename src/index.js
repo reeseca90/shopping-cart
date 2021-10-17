@@ -7,7 +7,6 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar />
     <Routes />
     <Footer />
   </React.StrictMode>,

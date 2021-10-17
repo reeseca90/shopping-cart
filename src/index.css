@@ -1,16 +1,25 @@
 #root {
   display: flex;
   flex-direction: column;
-  height: 97vh;
-  background-color: #00002c;
+  background-color: #00004c;
+  min-width: 400px;
   width: 97vw;
+  min-height: 97vh;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .mainContent {
   display: flex;
   flex-direction: column;
-  background-color: lightgreen;
   width: 97vw;
   max-width: 1000px;
   padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: white;
+  align-items: center;
 }
